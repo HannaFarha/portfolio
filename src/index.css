@@ -1,11 +1,12 @@
 :root{
-  --primary:black;
+  --primary:#000;
 }
-.light{--primary:white;
+.light{
+  --primary:#fff;
 }
 
 
 body
 {
-  background-color:var(--primary);
+  background-color: var(--primary);
 }
