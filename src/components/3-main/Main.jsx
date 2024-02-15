@@ -94,8 +94,8 @@ const Main = () => {
 
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">
-                     <a href={item.gitPath} ><div className="icon-link"></div></a>
-                     <a href={item.web}> <div className="icon-github"></div></a>
+                     <a href={item.web} ><div className="icon-link"></div></a>
+                     <a href={item.gitPath}> <div className="icon-github"></div></a>
                     </div>
 
                     <a className="link flex" href="">
