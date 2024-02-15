@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./main.css";
 import { myProjects } from "./myProjects";
-
+import { AnimatePresence, motion } from "framer-motion";
 
 const Main = () => {
   const [currentActive, setcurrentActive] = useState("all");
@@ -11,11 +11,11 @@ const Main = () => {
     setcurrentActive(buttonCategory);
 
     const newArr = myProjects.filter((item) => {
-      const result = item.category.find((myItem) => {
+      const ZZZ = item.category.find((myItem) => {
         return myItem === buttonCategory;
       });
 
-      return result === buttonCategory;
+      return ZZZ === buttonCategory;
     });
 
     setArr(newArr);
@@ -70,10 +70,10 @@ const Main = () => {
       </section>
 
       <section className=" flex right-section">
-        <div>
+        <AnimatePresence>
           {arr.map((item) => {
             return (
-              <article
+              <motion.article
                 layout
                 initial={{ transform: "scale(0.4)" }}
                 animate={{ transform: "scale(1)" }}
@@ -105,10 +105,10 @@ const Main = () => {
                     </a>
                   </div>
                 </div>
-              </article>
+              </motion.article>
             );
           })}
-        </div>
+        </AnimatePresence>
       </section>
     </main>
   );
