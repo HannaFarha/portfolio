@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./main.css";
 import { myProjects } from "./myProjects";
+
+
 import { AnimatePresence, motion } from "framer-motion";
 
 const Main = () => {
@@ -11,11 +13,11 @@ const Main = () => {
     setcurrentActive(buttonCategory);
 
     const newArr = myProjects.filter((item) => {
-      const ZZZ = item.category.find((myItem) => {
+      const myItem = item.category.find((myItem) => {
         return myItem === buttonCategory;
       });
 
-      return ZZZ === buttonCategory;
+      return myItem === buttonCategory;
     });
 
     setArr(newArr);
@@ -84,7 +86,7 @@ const Main = () => {
                 <img width={266} src={item.imgPath} alt="" />
 
                 <div style={{ width: "266px" }} className="box">
-                  <h1 className="title">{item.projectTitle}</h1>
+                  <h1 className="title">{item.projectTitle}{item.projectTitle}</h1>
                   <p className="sub-title">
                     Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
                     tempore dolor in, accusantium laudantium accusamus.
@@ -92,8 +94,8 @@ const Main = () => {
 
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">
-                      <div className="icon-link"></div>
-                      <div className="icon-github"></div>
+                     <a href={item.gitPath} ><div className="icon-link"></div></a>
+                     <a href={item.web}> <div className="icon-github"></div></a>
                     </div>
 
                     <a className="link flex" href="">
