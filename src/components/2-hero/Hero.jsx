@@ -28,18 +28,17 @@ const Hero = () => {
           transition={{ duration: 2 }}
           className="title"
         >
-          Software designer, founder, and amateur astronaut.
+         Full Stack Developer 
         </h1>
 
         <p className="sub-title">
-          I’m Hanna Farha, 
+          I’m Hanna Farha, Full Stack Developer -Javascript(ES6), React, NodeJS, MongoDB, Express, MYSQL, HTML & CSS.
         </p>
 
         <div className="all-icons flex">
-          <div className="icon icon-twitter"></div>
-          <div className="icon icon-instagram"></div>
-          <div className="icon icon-github"></div>
-          <div className="icon icon-linkedin"></div>
+        <a href="https://www.linkedin.com/in/hanna-farha/"><div  className="icon icon-linkedin"></div></a>
+        <a href="https://github.com/HannaFarha"><div  className="icon icon-github"></div></a>
+          <a href="https://www.instagram.com/hannaa_farha/"><div  className="icon icon-instagram"></div></a>
         </div>
       </div>
 
