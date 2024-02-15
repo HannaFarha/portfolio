@@ -9,7 +9,7 @@ import Footer from './components/5-footer/Footer'
 function App() {
   
   return (
-    <div className='container'><Header />
+    <div id="up" className='container'><Header  />
      <div className='divider' />
     <Hero />
     <div className='divider' />
@@ -19,7 +19,7 @@ function App() {
     <div className='divider' />
     <Footer />
 
-    <a style={{  transition: "1s" }} href="#up">
+    <a href="#up">
         <button className="icon-keyboard_arrow_up scroll2Top"></button>
       </a>
     </div>
