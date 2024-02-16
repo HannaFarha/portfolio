@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 import "./hero.css";
-
+import devAnimation from "../../../public/animation/Animation - 1708091221704.json";
 import { useRef } from "react";
 
 
@@ -51,7 +51,7 @@ const Hero = () => {
             // https://lottiereact.com/
             lottieRef.current.setSpeed(0.5);
           }}
-         
+          animationData={devAnimation}
         />
       </div>
     </section>
