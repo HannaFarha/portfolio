@@ -3,7 +3,8 @@ import React from "react";
 import "./contact.css";
 import { useForm, ValidationError } from '@formspree/react';
 import Lottie from "lottie-react";
-
+import doneAnimation from "../../../public/animation/Animation - 1708089710853.json";
+import contactAnimation from "../../../public/animation/Animation - 1708090750755.json"
 
 const Contact = () => {
     const [state, handleSubmit] = useForm("meqyglzl");
@@ -58,21 +59,22 @@ const Contact = () => {
               style={{ fontSize: "18px", marginTop: "1.7rem" }}
             >
               <Lottie
-                loop={false}
-                style={{ height: 37 }}
-                //animationData={doneAnimation}
+                // loop={false}
+                style={{ height: 80 }}
+                animationData={doneAnimation}
               />
+             
               Your message has been sent successfully 👌
             </p>
           )}
       </form>
-      {/* <div className=" animation">
+       <div className=" animation">
         <Lottie
           className="contact-animation"
-          style={{ height: 355 }}
+          style={{ height: 380 }}
           animationData={contactAnimation}
         />
-      </div> */}
+      </div> 
     </div>
     </section> );
 }
