@@ -5,6 +5,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import Lottie from "lottie-react";
 import doneAnimation from "../../animation/Animation - 1708089710853.json";
 import contactAnimation from "../../animation/Animation - 1708090750755.json";
+import thankyou from "../../animation/thankyou.json"
 
 const Contact = () => {
     const [state, handleSubmit] = useForm("meqyglzl");
@@ -15,8 +16,10 @@ const Contact = () => {
       Contact us
     </h1>
     <p className="sub-title">
-      Contact us for more information and Get notified when I publish
-      something new.
+    I would be very happy if you could provide me with your feedback and new ideas on how to improve this website. <Lottie
+                 style={{ height: 60, margin: 10,width: 100,color:"white"}}
+                animationData={thankyou}
+              />
     </p>
 
     <div style={{ justifyContent: "space-between" }} className="flex">
