@@ -59,7 +59,7 @@ const Main = () => {
           }}
           className={currentActive === "react" ? "active" : null}
         >
-          React & MUI
+          React
         </button>
         <button
           onClick={() => {
@@ -68,6 +68,14 @@ const Main = () => {
           className={currentActive === "node" ? "active" : null}
         >
           Node & Express
+        </button>
+        <button
+          onClick={() => {
+            handleClick("php");
+          }}
+          className={currentActive === "php" ? "active" : null}
+        >
+          PHP
         </button>
       </section>
 
@@ -86,15 +94,14 @@ const Main = () => {
                 <img width={266} src={item.imgPath} alt="" />
 
                 <div style={{ width: "266px" }} className="box">
-                  <h1 className="title">{item.projectTitle}{item.projectTitle}</h1>
+                  <h1 className="title">{item.projectTitle}</h1>
                   <p className="sub-title">
-                    Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                    tempore dolor in, accusantium laudantium accusamus.
+                    {item.description}
                   </p>
 
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">
-                     <a href={item.web} ><div className="icon-link"></div></a>
+                    {item.web && (<a href={item.web} ><div className="icon-link"></div></a>)}
                      <a href={item.gitPath}> <div className="icon-github"></div></a>
                     </div>
 
