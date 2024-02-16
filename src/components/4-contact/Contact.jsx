@@ -3,8 +3,8 @@ import React from "react";
 import "./contact.css";
 import { useForm, ValidationError } from '@formspree/react';
 import Lottie from "lottie-react";
-import doneAnimation from "../../../public/animation/Animation - 1708089710853.json";
-import contactAnimation from "../../../public/animation/Animation - 1708090750755.json"
+import doneAnimation from "../../animation/Animation - 1708089710853.json";
+import contactAnimation from "../../animation/Animation - 1708090750755.json";
 
 const Contact = () => {
     const [state, handleSubmit] = useForm("meqyglzl");

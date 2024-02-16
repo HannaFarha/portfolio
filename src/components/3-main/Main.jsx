@@ -1,9 +1,8 @@
 import { useState } from "react";
 import "./main.css";
 import { myProjects } from "./myProjects";
-
-
 import { AnimatePresence, motion } from "framer-motion";
+
 
 const Main = () => {
   const [currentActive, setcurrentActive] = useState("all");
@@ -91,8 +90,8 @@ const Main = () => {
                 key={item.imgPath}
                 className="  card"
               >
-                <img width={266} src={item.imgPath} alt="" />
-
+                <img width={266} src="./images/BookStoreApp.png" alt="" />
+<h1>{item.imgPath}</h1>
                 <div style={{ width: "266px" }} className="box">
                   <h1 className="title">{item.projectTitle}</h1>
                   <p className="sub-title">
