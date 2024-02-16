@@ -17,7 +17,7 @@ const Contact = () => {
     </h1>
     <p className="sub-title">
     I would be very happy if you could provide me with your feedback and new ideas on how to improve this website. <Lottie
-                 style={{ height: 60, margin: 10,width: 100,color:"white"}}
+                 style={{ height: 60, margin: 10,width: 100,backgroundColor:"white",marginLeft:350}}
                 animationData={thankyou}
               />
     </p>
