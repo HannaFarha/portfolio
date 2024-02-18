@@ -16,7 +16,7 @@ const Contact = () => {
       Contact us
     </h1>
     <p className="sub-title">
-    I would be very happy if you could provide me with your feedback and new ideas on how to improve this Portfolio. <Lottie
+    I would be very happy if you could provide me with your feedback and new ideas on how to improve this Portfolio. <Lottie className="contact-animation"
                  style={{ height: 60, margin: 10,width: 100,backgroundColor:"white",marginLeft:350}}
                 animationData={thankyou}
               />
