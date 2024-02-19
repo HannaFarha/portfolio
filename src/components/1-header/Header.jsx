@@ -57,8 +57,6 @@ const Header = () => {
             "currentMode",
             theme === "dark" ? "light" : "dark"
           );
-
-          // get value from LS
           setTheme(localStorage.getItem("currentMode"));
         }}
         className="mode flex"

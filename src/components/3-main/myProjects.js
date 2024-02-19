@@ -27,8 +27,7 @@ export const myProjects = [
       category: ["react","node", "css","html"],
       imgPath: ".../../../images/Recipe.png",
       gitPath:"https://github.com/HannaFarha/RecipeBook.git",
-      description:"A web application has been created in which the user can create, read, delete and update recipes. Created as a couple as part of my training in Ironhack Bootcamp.",
-      
+      description:"A web application has been created in which the user can create, read, delete and update recipes. Created as a couple as part of my training in Ironhack Bootcamp.",  
     },
     { projectTitle: "Flink Project",
      category: ["php","html","css"],
@@ -36,6 +35,4 @@ export const myProjects = [
     gitPath:"https://github.com/HannaFarha/FlinkProjekt.git",
     description:"A project I did for Flink when I was working as a rider in Flink to organize all the riders and make a report on the work at the end using phpMyAdmin · PHP · HTML · Cascading Style Sheets (CSS)",
    },
-    
-    
   ];
