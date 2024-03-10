@@ -22,6 +22,12 @@ export const myProjects = [
       web:"https://hannafarha.github.io/my-project/",
       description:"Created a Game in which the user should catch the Healthy Food and ignore Unhealthy Food.",
     },
+    {projectTitle: "Next.JS",
+      category: ["Next.JS","React"],
+      imgPath: "../../../images/Next.JS.png",
+      gitPath:"https://github.com/HannaFarha/Next.js.git",
+      web:"https://next-js-rouge-seven.vercel.app/",
+      description:"A project I did to learn Next.JS.",}
     {
       projectTitle: "Recipe App",
       category: ["react","node", "css","html"],
