@@ -28,7 +28,7 @@ export const myProjects = [
       imgPath: "../../../images/Next.JS.png",
       gitPath:"https://github.com/HannaFarha/Next.js.git",
       web:"https://next-js-rouge-seven.vercel.app/",
-      description:"A project I did to learn Next.JS.",
+      description:"A project I did to learn Next.JS. including Routes, fetching API, SSR and SEO",
     },
     {
       projectTitle: "Recipe App",
