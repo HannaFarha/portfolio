@@ -58,7 +58,15 @@ const Main = () => {
           }}
           className={currentActive === "react" ? "active" : null}
         >
-          React
+          React.JS
+        </button>
+        <button
+          onClick={() => {
+            handleClick("Next.JS");
+          }}
+          className={currentActive === "Next.JS" ? "active" : null}
+        >
+          Next.JS
         </button>
         <button
           onClick={() => {
