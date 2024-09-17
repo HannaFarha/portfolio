@@ -43,4 +43,11 @@ export const myProjects = [
     gitPath:"https://github.com/HannaFarha/FlinkProjekt.git",
     description:"A project I did for Flink when I was working as a rider in Flink to organize all the riders and make a report on the work at the end using phpMyAdmin · PHP · HTML · Cascading Style Sheets (CSS)",
    },
+   { projectTitle: "To Do List",
+    category: ["react","jsx","css"],
+    imgPath: "../../../images/to-do-liste-fehler",
+    web:"https://todolist-hannafarha.netlify.app",
+   gitPath:"https://github.com/HannaFarha/ToDoList",
+   description:"A project I did to practice React using React · JSX · Cascading Style Sheets (CSS)",
+  },
   ];
