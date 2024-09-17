@@ -45,7 +45,7 @@ export const myProjects = [
    },
    { projectTitle: "To Do List",
     category: ["react","jsx","css"],
-    imgPath: "../../../images/to-do-liste-fehler",
+    imgPath: "../../../images/to-do-liste-fehler.jpg",
     web:"https://todolist-hannafarha.netlify.app",
    gitPath:"https://github.com/HannaFarha/ToDoList",
    description:"A project I did to practice React using React · JSX · Cascading Style Sheets (CSS)",
