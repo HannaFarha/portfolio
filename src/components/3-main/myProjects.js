@@ -44,10 +44,10 @@ export const myProjects = [
     description:"A project I did for Flink when I was working as a rider in Flink to organize all the riders and make a report on the work at the end using phpMyAdmin · PHP · HTML · Cascading Style Sheets (CSS)",
    },
    { projectTitle: "To Do List",
-    category: ["react","jsx","css"],
+    category: ["react","jsx","css","express","Database"],
     imgPath: "../../../images/to-do-liste-fehler.jpg",
     web:"https://todolist-hannafarha.netlify.app",
    gitPath:"https://github.com/HannaFarha/ToDoList",
-   description:"A project I did to practice React using React · JSX · Cascading Style Sheets (CSS)",
+   description:"A project I developed to practice React, Express, and MongoDB. We plan to use it at work to organize our shopping list. The project involves React, express, NoSQL Database, JSX, and CSS."
   },
   ];
