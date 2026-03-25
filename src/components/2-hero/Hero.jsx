@@ -23,9 +23,9 @@ const Hero = () => {
           <div className="icon-verified">✔</div>
         </div>
 
-        {/* 🔥 Title */}
+        {/* Title */}
         <motion.h1
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="title"
@@ -33,9 +33,9 @@ const Hero = () => {
           Performance & Behavioral Marketer
         </motion.h1>
 
-        {/* 💎 Subtitle */}
+        {/* Subtitle */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
           className="sub-title"
@@ -46,22 +46,14 @@ const Hero = () => {
           to turn user behavior into measurable results.
         </motion.p>
 
-        {/* 🚀 CTA Buttons */}
-        <div className="cta-buttons flex">
-          <a href="#projects" className="btn-primary">View My Work</a>
-          <a href="https://www.linkedin.com/in/hanna-farha/" className="btn-secondary">
-            Let’s Connect
-          </a>
-        </div>
-
-        {/* 🔥 Proof Bar */}
+        {/* Proof Bar (خفيف واحترافي) */}
         <div className="proof-bar">
           <span>ROAS 25x</span>
           <span>Meta Experience</span>
           <span>IT Background</span>
         </div>
 
-        {/* Social */}
+        {/* Social Icons */}
         <div className="all-icons flex">
           <a href="https://www.linkedin.com/in/hanna-farha/">
             <div className="icon icon-linkedin"></div>
