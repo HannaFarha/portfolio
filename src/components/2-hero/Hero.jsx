@@ -10,43 +10,58 @@ const Hero = () => {
   return (
     <section className="hero flex">
       <div className="left-section">
+        {/* Avatar */}
         <div className="parent-avatar flex">
           <motion.img
-            initial={{ transform: "scale(0)" }}
-            animate={{ transform: "scale(1.1)" }}
+            initial={{ scale: 0 }}
+            animate={{ scale: 1.1 }}
             transition={{ damping: 6, type: "spring", stiffness: 100 }}
             src="./me.png"
             className="avatar"
             alt="Hanna Farha"
           />
-          <div className="icon-verified"></div>
+          <div className="icon-verified">✔</div>
         </div>
 
-        {/* 🔥 TITLE (مهم جداً) */}
+        {/* 🔥 Title */}
         <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
           className="title"
         >
           Performance & Behavioral Marketer
         </motion.h1>
 
-        {/* 💎 SUBTITLE (Positioning واضح) */}
-        <p className="sub-title">
+        {/* 💎 Subtitle */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="sub-title"
+        >
           I’m Hanna Farha — I don’t just run ads. I build marketing systems that convert.
           <br /><br />
           With a strong full-stack background, I combine data, psychology, and technology 
           to turn user behavior into measurable results.
-        </p>
+        </motion.p>
 
-        {/* 🚀 CTA Buttons (جديدة - مهمة جداً) */}
+        {/* 🚀 CTA Buttons */}
         <div className="cta-buttons flex">
           <a href="#projects" className="btn-primary">View My Work</a>
-          <a href="https://www.linkedin.com/in/hanna-farha/" className="btn-secondary">Let’s Connect</a>
+          <a href="https://www.linkedin.com/in/hanna-farha/" className="btn-secondary">
+            Let’s Connect
+          </a>
         </div>
 
-        {/* 🔗 Social Icons */}
+        {/* 🔥 Proof Bar */}
+        <div className="proof-bar">
+          <span>ROAS 25x</span>
+          <span>Meta Experience</span>
+          <span>IT Background</span>
+        </div>
+
+        {/* Social */}
         <div className="all-icons flex">
           <a href="https://www.linkedin.com/in/hanna-farha/">
             <div className="icon icon-linkedin"></div>
@@ -60,7 +75,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* 🎯 Animation */}
+      {/* Animation */}
       <div className="right-section animation">
         <Lottie
           lottieRef={lottieRef}
