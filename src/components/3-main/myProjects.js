@@ -4,7 +4,7 @@ export const myProjects = [
     category: ["react", "html", "css"],
     imgPath: "../../../images/BookStoreApp.png",
     gitPath: "https://github.com/HannaFarha/Book-Store-app.git",
-    web: "https://book-store-hanna-farha.netlify.app/",
+    web: "https://7lwlak.netlify.app/",
     description: "Crafted independently during Bootcamp, my third project is a sophisticated bookstore app. Utilizing multiple pages, users explore and add-to-cart books with ease.",
   },
   {

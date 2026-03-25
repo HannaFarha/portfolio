@@ -16,7 +16,7 @@ const Contact = () => {
       Contact us
     </h1>
     <p className="sub-title">
-    your feedback. <Lottie className="contact-animation"
+    Your feedback. <Lottie className="contact-animation"
                  style={{ height: 60, margin: 10,width: 100,backgroundColor:"white",marginLeft:350}}
                 animationData={thankyou}
               />
