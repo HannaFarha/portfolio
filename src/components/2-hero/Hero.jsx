@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <section className="hero flex">
-      <div className="left-section  ">
+      <div className="left-section">
         <div className="parent-avatar flex">
           <motion.img
             initial={{ transform: "scale(0)" }}
@@ -17,37 +17,54 @@ const Hero = () => {
             transition={{ damping: 6, type: "spring", stiffness: 100 }}
             src="./me.png"
             className="avatar"
-            alt=""
+            alt="Hanna Farha"
           />
           <div className="icon-verified"></div>
         </div>
 
+        {/* 🔥 TITLE (مهم جداً) */}
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 1.5 }}
           className="title"
         >
-         Full Stack Developer 
+          Performance & Behavioral Marketer
         </motion.h1>
 
+        {/* 💎 SUBTITLE (Positioning واضح) */}
         <p className="sub-title">
-          I’m Hanna Farha, Full Stack Developer -Javascript(ES6), React, NodeJS, MongoDB, Express, MYSQL, HTML & CSS.
+          I’m Hanna Farha — I don’t just run ads. I build marketing systems that convert.
+          <br /><br />
+          With a strong full-stack background, I combine data, psychology, and technology 
+          to turn user behavior into measurable results.
         </p>
 
+        {/* 🚀 CTA Buttons (جديدة - مهمة جداً) */}
+        <div className="cta-buttons flex">
+          <a href="#projects" className="btn-primary">View My Work</a>
+          <a href="https://www.linkedin.com/in/hanna-farha/" className="btn-secondary">Let’s Connect</a>
+        </div>
+
+        {/* 🔗 Social Icons */}
         <div className="all-icons flex">
-        <a href="https://www.linkedin.com/in/hanna-farha/"><div  className="icon icon-linkedin"></div></a>
-        <a href="https://github.com/HannaFarha"><div  className="icon icon-github"></div></a>
-          <a href="https://www.instagram.com/hannaa_farha/"><div  className="icon icon-instagram"></div></a>
+          <a href="https://www.linkedin.com/in/hanna-farha/">
+            <div className="icon icon-linkedin"></div>
+          </a>
+          <a href="https://github.com/HannaFarha">
+            <div className="icon icon-github"></div>
+          </a>
+          <a href="https://www.instagram.com/hannaa_farha/">
+            <div className="icon icon-instagram"></div>
+          </a>
         </div>
       </div>
 
-      <div className="right-section animation ">
+      {/* 🎯 Animation */}
+      <div className="right-section animation">
         <Lottie
           lottieRef={lottieRef}
-          className=""
           onLoadedImages={() => {
-            // https://lottiereact.com/
             lottieRef.current.setSpeed(0.5);
           }}
           animationData={devAnimation}
