@@ -11,17 +11,14 @@ const Hero = () => {
     <section className="hero flex">
       <div className="left-section">
         {/* Avatar */}
-        <div className="parent-avatar flex">
-          <motion.img
-            initial={{ scale: 0 }}
-            animate={{ scale: 1.1 }}
-            transition={{ damping: 6, type: "spring", stiffness: 100 }}
-            src="./me.png"
-            className="avatar"
-            alt="Hanna Farha"
-          />
-          <div className="icon-verified">✔</div>
-        </div>
+        <div className="avatar-wrapper">
+  <motion.img
+    src="./me.png"
+    className="avatar"
+    alt="Hanna Farha"
+  />
+  <div className="verified-badge">✔</div>
+</div>
 
         {/* Title */}
         <motion.h1
