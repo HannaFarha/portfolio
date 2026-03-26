@@ -37,11 +37,8 @@ const Hero = () => {
           transition={{ delay: 0.4 }}
           className="sub-title"
         >
-          I’m Hanna Farha — I don’t just run ads. I build marketing systems that convert.
-          <br /><br />
-          With a strong full-stack background, I combine data, psychology, and technology 
-          to turn user behavior into measurable results.
-        </motion.p>
+          
+        
         <section id="about" className="what-i-do">
 
 {/* 🔥 Header */}
@@ -53,6 +50,7 @@ const Hero = () => {
 >
   <h2>What I Do</h2>
   <p>
+    My name Hanna Farha.
     I combine marketing, psychology, and technology to build systems 
     that drive performance and real business results.
   </p>
@@ -98,8 +96,8 @@ const Hero = () => {
   </motion.div>
 
 </div>
-</section>
-
+</section></motion.p>
+<p>  </p>
         {/* Proof Bar (خفيف واحترافي) */}
         <div className="proof-bar">
           <span>ROAS 25x</span>
