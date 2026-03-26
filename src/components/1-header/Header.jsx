@@ -30,7 +30,7 @@ const Header = () => {
 
       {/* 💎 Logo (NEW) */}
       <div className="logo-container">
-  <img src="/logo.png" alt="Hanna Logo" className="logo-img" />
+  <img src="/logo3.png" alt="Hanna Logo" className="logo-img" />
 
   <h2 className="logo">
     Hanna<span>.</span>
