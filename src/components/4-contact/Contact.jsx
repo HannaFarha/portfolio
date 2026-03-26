@@ -1,3 +1,4 @@
+
 import "./contact.css";
 import React from "react";
 import "./contact.css";
@@ -10,7 +11,7 @@ import thankyou from "../../animation/thankyou.json"
 const Contact = () => {
     const [state, handleSubmit] = useForm("meqyglzl");
     
-    return (  <section className="contact-us">
+    return ( <section id = "projects"> <section className="contact-us">
     <h1 className="title">
       <span className="icon-envelope"> </span>
       Contact us
@@ -79,7 +80,7 @@ const Contact = () => {
         />
       </div> 
     </div>
-    </section> );
+    </section></section> );
 }
  
 export default Contact;
