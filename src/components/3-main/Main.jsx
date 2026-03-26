@@ -22,7 +22,7 @@ const Main = () => {
     setArr(newArr);
   };
 
-  return (
+  return (<section id = "projects">
     <main className="flex">
       <section className="flex  left-section">
         <button
@@ -126,7 +126,7 @@ const Main = () => {
           })}
         </AnimatePresence>
       </section>
-    </main>
+    </main></section>
   );
 };
 
