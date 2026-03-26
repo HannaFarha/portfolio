@@ -2,7 +2,7 @@ import React from "react";
 import "./footer.css";
 const Footer = () => {
   return (
-    <footer className="flex">
+   <nav> <footer className="flex">
       <ul className="flex">
         <li>
           <a href="#about">About</a>
@@ -20,6 +20,7 @@ const Footer = () => {
 
       <p>© 2026 Spencer Sharp. All rights reserved.</p>
     </footer>
+    </nav>
   );
 };
 
