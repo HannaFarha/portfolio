@@ -16,6 +16,9 @@ const Footer = () => {
         <li>
           <a href="">Datenschutz</a>
         </li>
+        <li>
+          <a href="">Impressum</a>
+        </li>
       </ul>
 
       <p>© 2026 Spencer Sharp. All rights reserved.</p>
