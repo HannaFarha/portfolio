@@ -1,4 +1,64 @@
-/* تحسين عام بدون كسر الثيم */
+.what-i-do {
+  margin-top: 4rem;
+  padding: 0 2rem;
+}
+
+/* Header */
+.wid-header {
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
+
+.wid-header h2 {
+  font-size: 2rem;
+  color: var(--title);
+  margin-bottom: 10px;
+}
+
+.wid-header p {
+  color: var(--subtitle);
+  font-size: 0.95rem;
+  line-height: 1.6rem;
+}
+
+/* Cards */
+.wid-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.wid-card {
+  flex: 1;
+  min-width: 260px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+
+  background-color: var(--secondary);
+  border: 1px solid var(--border);
+
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.wid-card:hover {
+  border: 1px solid var(--blue);
+  transform: translateY(-5px);
+}
+
+/* Title */
+.wid-card h3 {
+  color: var(--title);
+  margin-bottom: 10px;
+}
+
+/* Text */
+.wid-card p {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}/* تحسين عام بدون كسر الثيم */
 section.hero {
   margin-top: 3rem;
 }
