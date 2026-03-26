@@ -29,9 +29,13 @@ const Header = () => {
       ></button>
 
       {/* 💎 Logo (NEW) */}
-      <h2 className="logo">
-        Hanna<span>.</span>
-      </h2>
+      <div className="logo-container">
+  <img src="/logo1.png" alt="Hanna Logo" className="logo-img" />
+
+  <h2 className="logo">
+    Hanna<span>.</span>
+  </h2>
+</div>
 
       {/* 🧭 Navigation */}
       <nav>
