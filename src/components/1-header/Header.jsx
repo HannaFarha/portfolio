@@ -18,41 +18,41 @@ const Header = () => {
   }, [theme]);
 
   return (
-    <header className="  flex">
+    <header className="flex">
+      
+      {/* 🔥 Mobile Menu Button */}
       <button
         onClick={() => {
           setshowModal(true);
         }}
         className="menu icon-menu flex"
-      >
-        {" "}
-      </button>
-      <div />
+      ></button>
 
+      {/* 💎 Logo (NEW) */}
+      <h2 className="logo">
+        Hanna<span>.</span>
+      </h2>
+
+      {/* 🧭 Navigation */}
       <nav>
         <ul className="flex">
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
 
           <li>
-            <a href="">Articles</a>
+            <a href="#projects">Projects</a>
           </li>
+
           <li>
-            <a href="">Projects</a>
-          </li>
-          <li>
-            <a href="">Speaking</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
 
+      {/* 🌙 Theme Toggle */}
       <button
         onClick={() => {
-          // Send value to LS
           localStorage.setItem(
             "currentMode",
             theme === "dark" ? "light" : "dark"
@@ -62,15 +62,16 @@ const Header = () => {
         className="mode flex"
       >
         {theme === "dark" ? (
-          <span className="icon-moon-o"> </span>
+          <span className="icon-moon-o"></span>
         ) : (
-          <span className="icon-sun"> </span>
+          <span className="icon-sun"></span>
         )}
       </button>
 
+      {/* 📱 Modal Menu */}
       {showModal && (
         <div className="fixed">
-          <ul className="modal ">
+          <ul className="modal">
             <li>
               <button
                 className="icon-close"
@@ -79,20 +80,17 @@ const Header = () => {
                 }}
               />
             </li>
+
             <li>
-              <a href="">About</a>
+              <a href="#about" onClick={() => setshowModal(false)}>About</a>
             </li>
+
             <li>
-              <a href="">Articles</a>
+              <a href="#projects" onClick={() => setshowModal(false)}>Projects</a>
             </li>
+
             <li>
-              <a href="">Projects</a>
-            </li>
-            <li>
-              <a href="">Speaking</a>
-            </li>
-            <li>
-              <a href="">Uses</a>
+              <a href="#contact" onClick={() => setshowModal(false)}>Contact</a>
             </li>
           </ul>
         </div>
