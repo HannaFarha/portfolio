@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   const lottieRef = useRef();
 
-  return (
+  return (<section id="about">
     <section className="hero flex">
       <div className="left-section">
         {/* Avatar */}
@@ -74,7 +74,7 @@ const Hero = () => {
           animationData={devAnimation}
         />
       </div>
-    </section>
+    </section></section>
   );
 };
 
