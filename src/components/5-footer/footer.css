@@ -29,4 +29,104 @@ footer.flex{
         gap: 2rem;
         }
     
-    }
+    }/* Styling für die Rechtstext-Popups (Modals) */
+.legal-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  backdrop-filter: blur(4px);
+}
+
+.legal-modal-content {
+  background-color: #ffffff;
+  color: #2d3748;
+  width: 90%;
+  max-width: 750px;
+  max-height: 85vh;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.legal-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #a0aec0;
+  transition: color 0.2s ease;
+  z-index: 10;
+}
+
+.legal-modal-close:hover {
+  color: #2d3748;
+}
+
+.legal-modal-inner-text {
+  padding: 40px;
+  overflow-y: auto;
+  text-align: left;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+.legal-modal-inner-text h1 {
+  font-size: 1.8rem;
+  color: #1a2a3a;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.legal-modal-inner-text h2 {
+  font-size: 1.3rem;
+  color: #2b6cb0;
+  margin-top: 25px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 5px;
+}
+
+.legal-modal-inner-text h3 {
+  font-size: 1.1rem;
+  color: #2d3748;
+  margin-top: 15px;
+}
+
+.legal-subtitle {
+  color: #718096;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+.legal-highlight-box {
+  background-color: #f7fafc;
+  border-left: 4px solid #3182ce;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.legal-modal-inner-text ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.legal-modal-inner-text li {
+  margin-bottom: 5px;
+}
+
+.legal-modal-inner-text a {
+  color: #3182ce;
+  text-decoration: underline;
+}

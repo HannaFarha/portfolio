@@ -156,4 +156,153 @@ section.hero .animation {
   section.hero .animation {
     display: none;
   }
+}/* Haupt-Layout-Strukturen */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 400px;
+  padding: 40px 0;
+}
+
+.left-section {
+  flex: 1.2;
+}
+/* تنسيق قسم الميديا الأيمن */
+.media-right-container {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* كرت الفيديو مصلح ومطابق تماماً لأبعاد الـ iframe */
+.hero-video-card {
+  background: #1a2230; 
+  border: 0px solid #2d3748;
+  border-radius: 12px;
+  padding: 0px; /* تقليل الحواف الداخلية ليتطابق مع مشغل الفيديو */
+  box-shadow: 0 360px 350px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  box-sizing: border-box;
+}
+
+/* حاوية مشغل الفيديو لإجبار أبعاد Google Drive على التطابق الهيكلي */
+.video-responsive-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+}
+
+.portfolio-hero-iframe {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* التنسيق السفلي لكرت الفيديو */
+.video-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 4px 2px 4px;
+}
+
+.video-tag-text {
+  font-size: 0.9rem;
+  color: #a0aec0;
+  font-weight: 500;
+}
+
+/* زر السيرة الذاتية (Standard CV) */
+.linkedin-link-btn {
+  background-color: #0077b5;
+  color: #ffffff !important;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0, 119, 181, 0.2);
+}
+
+.linkedin-link-btn:hover {
+  background-color: #005987;
+  transform: translateY(-1px);
+}
+
+/* 🔥 إزالة المربع الأحمر المحيط بالأنيميشن (Laptop) بشكل نهائي وثابت */
+.animation-clean-wrapper {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  opacity: 0.85;
+  border: none !important;      /* إلغاء أي حدود قديمة */
+  outline: none !important;     /* إلغاء أي خط خارجي تلقائي */
+  background: transparent !important;
+}
+
+.animation-clean-wrapper div, 
+.animation-clean-wrapper svg {
+  border: none !important;
+  outline: none !important;
+}
+
+/* ===================================================
+   📱 التوافق الكامل مع شاشات الهواتف (Phonescreen)
+   =================================================== */
+@media (max-width: 1668px) {
+  .hero {
+    flex-direction: column; 
+    gap: 30px;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .left-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .avatar-wrapper {
+    margin: 0 auto;
+  }
+
+  .all-icons {
+    justify-content: center;
+  }
+
+  .proof-bar {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .media-right-container {
+    max-width: 100%;
+    order: -1; /* رفع الفيديو لقمة الشاشة في الموبايل ليكون أول ما يراه الزائر */
+  }
+
+  .video-card-footer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .linkedin-link-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
 }
