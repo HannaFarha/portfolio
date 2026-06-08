@@ -1,12 +1,12 @@
+/* --- الأقسام الرئيسية والبطاقات (What I Do) --- */
 .what-i-do {
-  margin-top: 4rem;
-  padding: 0 2rem;
+  margin-top: 2.5rem;
+  padding: 0;
 }
 
-/* Header */
 .wid-header {
   max-width: 600px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .wid-header h2 {
@@ -21,180 +21,141 @@
   line-height: 1.6rem;
 }
 
-/* Cards */
 .wid-cards {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-/* Card */
 .wid-card {
   flex: 1;
-  min-width: 260px;
+  min-width: 250px;
   padding: 1.5rem;
   border-radius: 1rem;
-
   background-color: var(--secondary);
   border: 1px solid var(--border);
-
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
-/* Hover effect */
 .wid-card:hover {
   border: 1px solid var(--blue);
   transform: translateY(-5px);
 }
 
-/* Title */
 .wid-card h3 {
   color: var(--title);
   margin-bottom: 10px;
 }
 
-/* Text */
 .wid-card p {
   color: var(--subtitle);
   font-size: 0.9rem;
   line-height: 1.5rem;
-}/* تحسين عام بدون كسر الثيم */
-section.hero {
-  margin-top: 3rem;
 }
+
+/* --- الهيكل الرئيسي للـ Hero --- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px; /* تم إصلاحها من 400px لمنع كسر الشاشة */
+  padding: 40px 0;
+  width: 100%;
+}
+
+.left-section {
+  flex: 1.2;
+  width: 100%;
+}
+
+/* --- الصورة الشخصية وشارات التحقق --- */
 .avatar-wrapper {
   position: relative;
   display: inline-block;
+}
+
+section.hero .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.15);
 }
 
 .verified-badge {
   position: absolute;
   bottom: 5px;
   right: 5px;
-
-  background: #0a66c2; /* LinkedIn blue */
+  background: #0a66c2; /* LinkedIn Blue */
   color: white;
   font-size: 0.7rem;
-
   width: 22px;
   height: 22px;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border: 2px solid var(--bg);
+  border: 2px solid var(--bg, #fff);
 }
 
-/* Avatar */
-section.hero .avatar {
-  width: 120px; /* كان 88px */
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-
-  /* 🔥 تحسين الجودة والشكل */
-  border: 3px solid var(--border);
-  box-shadow: 0 0 25px rgba(0, 150, 255, 0.2);
-}
-
-/* Verified */
-section.hero .icon-verified {
-  color: var(--blue);
-  font-size: 1rem;
-}
-
-/* Title تحسين بسيط */
+/* --- النصوص والخطوط --- */
 section.hero h1.title {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   line-height: 3.2rem;
   margin: 24px 0;
   color: var(--title);
 }
 
-/* Subtitle تحسين قراءة */
-section.hero p.sub-title {
-  color: var(--subtitle);
-  font-size: 0.95rem;
-  line-height: 1.7rem;
-  margin-bottom: 20px;
-  max-width: 600px;
-}
-
-/* 🔥 Proof Bar احترافي وخفيف */
 .proof-bar {
   display: flex;
   gap: 18px;
   font-size: 0.8rem;
   color: var(--subtitle);
   opacity: 0.8;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
-/* Icons تحسين */
 section.hero .all-icons {
   font-size: 1.3rem;
   gap: 1.5rem;
-  color: var(--subtitle);
+  display: flex;
 }
 
 section.hero .all-icons .icon:hover {
   transform: scale(1.2);
-  transition: 0.3s;
+  transition: 0.3s ease;
   cursor: pointer;
   color: var(--icon-hover);
 }
 
-/* Animation fix */
-section.hero .animation {
-  width: 100%;
-  transform: translate(100px, 55px);
-}
-
-@media (max-width: 1250px) {
-  section.hero .animation {
-    display: none;
-  }
-}/* Haupt-Layout-Strukturen */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 400px;
-  padding: 40px 0;
-}
-
-.left-section {
-  flex: 1.2;
-}
-/* تنسيق قسم الميديا الأيمن */
+/* --- القسم الأيمن (كرت الفيديو + اللابتوب) --- */
 .media-right-container {
   flex: 0.8;
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 30px;
   width: 100%;
-  max-width: 400px;
+  max-width: 360px; /* حجم مثالي للفيديو الطولي بدون أخذ مساحة ضخمة */
+  align-items: center;
 }
 
-/* كرت الفيديو مصلح ومطابق تماماً لأبعاد الـ iframe */
 .hero-video-card {
   background: #1a2230; 
-  border: 0px solid #2d3748;
-  border-radius: 12px;
-  padding: 0px; /* تقليل الحواف الداخلية ليتطابق مع مشغل الفيديو */
-  box-shadow: 0 360px 350px rgba(0, 0, 0, 0.3);
-  width: 80%;
+  border: 1px solid var(--border, #2d3748);
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* تصليح الـ Shadow الضخم المخرب للـ Layout */
+  width: 100%;
   box-sizing: border-box;
 }
 
-/* حاوية مشغل الفيديو لإجبار أبعاد Google Drive على التطابق الهيكلي */
+/* حاوية المشغل لدعم الفيديو الطولي للموبايل بشكل صحيح */
 .video-responsive-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 9 / 16;
-  border-radius: 8px;
+  aspect-ratio: 9 / 16; /* أبعاد ستوري الموبايل والفيديو الطولي المرفوع */
+  border-radius: 10px;
   overflow: hidden;
   background: #000;
 }
@@ -209,31 +170,28 @@ section.hero .animation {
   object-fit: cover;
 }
 
-/* التنسيق السفلي لكرت الفيديو */
 .video-card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 4px 2px 4px;
+  padding: 12px 4px 2px 4px;
 }
 
 .video-tag-text {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #a0aec0;
   font-weight: 500;
 }
 
-/* زر السيرة الذاتية (Standard CV) */
 .linkedin-link-btn {
   background-color: #0077b5;
   color: #ffffff !important;
-  padding: 6px 14px;
+  padding: 6px 12px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.8rem;
-  transition: background-color 0.2s ease, transform 0.1s ease;
-  box-shadow: 0 4px 6px rgba(0, 119, 181, 0.2);
+  font-size: 0.75rem;
+  transition: background-color 0.2s, transform 0.1s;
 }
 
 .linkedin-link-btn:hover {
@@ -241,68 +199,67 @@ section.hero .animation {
   transform: translateY(-1px);
 }
 
-/* 🔥 إزالة المربع الأحمر المحيط بالأنيميشن (Laptop) بشكل نهائي وثابت */
+/* 🔥 تنظيف حواف اللابتوب والأنيميشن وإلغاء أي خطوط حمراء نهائياً */
 .animation-clean-wrapper {
   width: 100%;
-  max-width: 300px;
+  max-width: 240px;
   margin: 0 auto;
   opacity: 0.85;
-  border: none !important;      /* إلغاء أي حدود قديمة */
-  outline: none !important;     /* إلغاء أي خط خارجي تلقائي */
+  border: none !important;
+  outline: none !important;
   background: transparent !important;
 }
 
-.animation-clean-wrapper div, 
-.animation-clean-wrapper svg {
+.animation-clean-wrapper * {
   border: none !important;
   outline: none !important;
 }
 
 /* ===================================================
-   📱 التوافق الكامل مع شاشات الهواتف (Phonescreen)
+   📱 التجاوب الكامل والدعم لشاشات الهواتف (Handy Screens)
    =================================================== */
-@media (max-width: 1668px) {
+@media (max-width: 1024px) {
   .hero {
     flex-direction: column; 
-    gap: 30px;
+    gap: 40px;
     align-items: center;
-    padding: 20px 10px;
+    padding: 20px 0;
   }
 
   .left-section {
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .avatar-wrapper {
-    margin: 0 auto;
+  section.hero h1.title {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
   }
 
-  .all-icons {
+  .wid-cards {
     justify-content: center;
   }
 
-  .proof-bar {
+  .wid-card {
+    text-align: left;
+    min-width: 100%; /* تأخذ العرض الكامل بشكل مريح على الهواتف */
+  }
+
+  .all-icons, .proof-bar {
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
   }
 
   .media-right-container {
     max-width: 100%;
-    order: -1; /* رفع الفيديو لقمة الشاشة في الموبايل ليكون أول ما يراه الزائر */
-  }
-
-  .video-card-footer {
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-  }
-
-  .linkedin-link-btn {
     width: 100%;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9rem;
+    order: -1; /* يرفع كرت الفيديو كأول عنصر يظهر في شاشة الهاتف لجلب الإهتمام فوراً */
+  }
+
+  .hero-video-card {
+    max-width: 320px; /* حماية عرض الفيديو على الهواتف الصغيرة جداً ليبقى منسقاً */
+    margin: 0 auto;
   }
 }
